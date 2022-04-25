@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f1f1f1;
+	font-family: Arial;
+}
+
+/* ------------------------------------ Style for Navigation Bar ------------------------------------ */
+ul.navigationBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul.navigationBar li {
+	float: left;
+}
+
+ul.navigationBar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.navigationBar li a:hover:not(.active) {
+	background-color: #04aa6d41;
+}
+
+ul.navigationBar li a.active {
+	background-color: #04aa6d;
+}
+
+ul.navigationBar li.right {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	ul.navigationBar li.right,
+	ul.navigationBar li {
+		float: none;
+	}
+}
+/* ------------------------------------ Style for Image Viewer ------------------------------------ */
+
+/* Center website */
+.imageMainContain {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.imageRow {
+	margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each imageColumn */
+.imageRow,
+.imageRow > .imageColumn {
+	padding: 8px;
+}
+
+/* Create four equal imageColumns that floats next to each other */
+.imageColumn {
+	float: left;
+	width: 25%;
+}
+
+/* Clear floats after imageRows */
+.imageRow:after {
+	imagecontent: '';
+	display: table;
+	clear: both;
+}
+
+
+/* imageContent */
+.imageContent {
+	background-color: white;
+	padding: 10px;
+	border: solid white;
+	border-radius: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-border-radius: 5%;
+	-moz-border-radius: 5%;
+	-ms-border-radius: 5%;
+	-o-border-radius: 5%;
+}
+.imageContent h3{
+	text-align: center;
+	padding-bottom: 10px;
+}
+/* Responsive layout - makes a two imageColumn-layout instead of four imageColumns */
+@media screen and (max-width: 900px) {
+	.imageColumn {
+		width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two imageColumns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.imageColumn {
+		width: 100%;
+	}
+}
+/* ------------------------------------ Style for Table ------------------------------------ */
+table {
+	margin: auto;
+	margin-top: 15px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 80%;
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: center;
+	padding: 16px;
+}
+
+th:first-child,
+td:first-child {
+	text-align: left;
+}
+th {
+	background-color: grey;
+}
+tr {
+	border-bottom: 1px solid gray;
+}
+
+tr:hover {
+	background-color: grey;
+}
+
+.fa-check {
+	color: green;
+}
+
+.fa-remove {
+	color: red;
+}

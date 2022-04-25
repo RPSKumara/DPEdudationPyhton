@@ -1,0 +1,7 @@
+5 images
+1 Ordered or Unordered List
+1 Simple animation
+1 Table with data
+5 hyperlinks
+1 Simple JavaScript function
+Responsive web page design

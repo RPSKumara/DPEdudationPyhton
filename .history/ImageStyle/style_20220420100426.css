@@ -1,0 +1,8 @@
+.imageSlider{
+    min-width: 80%;
+    max-width: 80%;
+    background-color: blue;
+    border: red solid 0.5px;
+}.previewImg{
+    width: 250px;
+}

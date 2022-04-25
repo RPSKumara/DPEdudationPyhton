@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <button onclick="btnClickEvent()">Hello</button>
+        <script>
+            function btnClickEvent (){
+                // usage of java script event handling
+                document.write("<h1>Hello all this your javascript event</h1>");
+            }
+        </script>
+    </form> -->
+    <form id="form" action="">
+        <label for="checkbox">Are you sure</label>
+        <input type="checkbox" name="" id="checkbox">
+        <button type="submit">Submit</button>
+        <h4 id="message"></h4>
+        <script>
+            const form = document.getElementById('form')
+            const checkbox = document.getElementById('checkbox')
+            const message = document.getElementById('message')
+
+            form.addEventListener('submit',function validateCheckbox(e){
+                e.preventDefault()
+                if(checkbox.checkbox === true){
+                    message.innerHTML = 'Done'
+                }
+                else{
+                    message.innerHTML = 'Please check something'
+                }
+            })
+        </script>
+    </form>
+</body>
+</html>

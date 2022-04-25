@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 100%;
+	/* background-color: aqua; */
+}
+.imageSlider {
+	min-width: 80%;
+	width: 80%;
+	margin: 20px 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.previewImg {
+	width: 40%;
+	border: 1px rgba(76, 0, 255, 0.747) solid;
+	padding: 2px;
+	height: auto;
+	opacity: 80%;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+.animationHandle {
+	width: 300px;
+	height: 100px;
+    margin: 10%;
+	background-color: black;
+    border: 2px solid red;
+}
+
+/* .animationHandle:hover{
+    transform: scale(2,3);
+    x - (width *2), y - (height *3)
+} */
+/* .animationHandle:hover{
+    transform:skew(30deg,30deg);
+} */
+/* .animationHandle:hover{
+    transform:rotate(30deg);
+} */
+/* .animationHandle:hover{
+    transform: translate(500px , 0px);
+    goto given direction x - 500px, y - 0px
+
+} */
+
+.animationHandle {
+	animation-duration: 5s;
+	animation-name: skew_animation;
+}
+
+@keyframes skew_animation {
+	0% {
+		transform: skew(0deg);
+	}
+
+	100% {
+		transform: skew(30deg);
+	}
+}

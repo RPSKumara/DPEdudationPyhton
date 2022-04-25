@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul.navigationBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul.navigationBar li {
+	float: left;
+}
+
+ul.navigationBar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.navigationBar li a:hover:not(.active) {
+	background-color: #04aa6d41;
+}
+
+ul.navigationBar li a.active {
+	background-color: #04aa6d;
+}
+
+ul.navigationBar li.right {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	ul.navigationBar li.right,
+	ul.navigationBar li {
+		float: none;
+	}
+}

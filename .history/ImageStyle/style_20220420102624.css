@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-color: aqua;
+}
+.imageSlider{
+    min-width: 80%;
+    width: 80%;
+    margin: 20px 10%;
+    
+    border: red solid 0.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.previewImg{
+    width: 40%;
+    border: red solid 1.5px;
+    padding: 2px;
+    max-height: 150px;
+    min-height: 150px;
+}

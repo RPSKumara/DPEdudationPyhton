@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Usage of java script event handling -->
+		<!-- <form action="">
+        <button onclick="btnClickEvent()">Hello</button>
+        <script>
+            function btnClickEvent (){
+                // usage of java script event handling
+                document.write("<h1>Hello all this your javascript event</h1>");
+            }
+        </script>
+    </form> -->
+		<!-- Usage of java script form validation  -->
+		<!-- <form id="form" action="">
+        <label for="checkbox">Are you sure</label>
+        <input type="checkbox" name="" id="checkbox">
+        <button type="submit">Submit</button>
+        <h4 id="message"></h4>
+        <script>
+            const form = document.getElementById('form')
+            const checkbox = document.getElementById('checkbox')
+            const message = document.getElementById('message')
+
+            form.addEventListener('submit',function validateCheckbox(e){
+                e.preventDefault()
+                if(checkbox.checked === true){
+                    message.innerHTML = 'Done'
+                }
+                else{
+                    message.innerHTML = 'Please check something'
+                }
+            })
+        </script>
+    </form> -->
+		<!-- Usage of java script Try , Catch , Finally methods  -->
+        <!-- <div class="box">
+			<h4>Try, Catch and Throw</h4>
+			<label for="get-value">Please input a number between 5 and 10:</label>
+			<input type="text" id="get-value" value="" />
+			<button onclick="getValue()">Get Valu of Input</button>
+			<p id="error-message"></p>
+			<script>
+				'stric-mode';
+				var messages, number;
+
+				/*********************************
+                try / catch code test
+                *********************************/
+				function getValue() {
+					messages = document.getElementById('error-message');
+					messages.innerHTML = '';
+					messages.style.color = 'red';
+
+					number = document.getElementById('get-value').value;
+
+					try {
+						if (number == '') throw 'is Empty';
+						if (isNaN(number)) throw 'is not a number';
+						if (number > 10) throw 'is too Big';
+						if (number < 5) throw 'is too Small';
+
+						debugger;
+
+						if (number == number) {
+							messages.style.color = 'green';
+							throw 'is ' + number;
+						}
+					} catch (err) {
+						messages.innerHTML = 'Input ' + err;
+					} finally {
+						var test = (document.getElementById('get-value').value = '');
+					}
+					console.log([typeof test, test, number.valueOf()]);
+				}
+			</script> -->
+		</div>
+	</body>
+</html>
